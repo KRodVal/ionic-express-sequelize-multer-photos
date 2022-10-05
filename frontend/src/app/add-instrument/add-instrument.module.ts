@@ -4,18 +4,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AddBicyclePageRoutingModule } from './add-bicycle-routing.module';
+import { AddInstrumentPageRoutingModule } from './add-instrument-routing.module';
+import { AddInstrumentPage } from './add-instrument.page';
 
-import { AddBicyclePage } from './add-bicycle.page';
+
 
 @NgModule({
+  
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    AddBicyclePageRoutingModule
+    AddInstrumentPageRoutingModule
   ],
-  declarations: [AddBicyclePage]
+  declarations: [AddInstrumentPage]
 })
-export class AddBicyclePageModule {}
+export class AddInstrumentPageModule {}

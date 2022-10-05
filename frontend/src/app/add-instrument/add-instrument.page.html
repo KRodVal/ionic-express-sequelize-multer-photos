@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Add Bicycle</ion-title>
+    <ion-title>Add Instrument</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -33,7 +33,7 @@
     </ion-row>
   </ion-grid>
 
-  <form [formGroup]="bicycleForm" (ngSubmit)="submitForm()" novalidate>
+  <form [formGroup]="instrumentForm" (ngSubmit)="submitForm()" novalidate>
     <ion-item lines="full">
       <ion-label position="floating">Brand</ion-label>
       <ion-input formControlName="brand" type="text" required></ion-input>

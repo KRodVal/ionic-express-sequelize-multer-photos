@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Instrument List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let i of instruments">
+      <ion-avatar slot="start">
+        <img *ngIf="i.filename" src="http://localhost:8080/images/{{i.filename}}" alt="image" />
+      </ion-avatar>
+      <ion-label>
+        <h1>{{i.brand}}</h1>
+        <p>{{i.model}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addInstrument()">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
