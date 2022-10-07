@@ -19,7 +19,7 @@ exports.create = (req, res) => {
   }
 
   // Save Instrument in the database
-  Instrument.create(bicycle).then(data => {
+  Instrument.create(instrument).then(data => {
     res.send(data);
   }).catch(err => {
     res.status(500).send({
