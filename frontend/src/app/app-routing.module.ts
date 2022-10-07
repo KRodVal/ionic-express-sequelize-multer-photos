@@ -12,7 +12,7 @@ const routes: Routes = [
     loadChildren: () => import('./add-instrument/add-instrument.module').then( m => m.AddInstrumentPageModule)
   },
   {
-    path: 'list-instrument',
+    path: 'list-instruments',
     loadChildren: () => import('./list-instruments/list-instruments.module').then( m => m.ListInstrumentsPageModule)
   },
 ];
